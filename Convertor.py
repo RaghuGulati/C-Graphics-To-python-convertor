@@ -6,20 +6,20 @@ from tkinter import *
 from time import *
 import time
 
-master = Tk()
+master = Tk()   #It opens a tkinter window 
 w=Canvas(master,width=1000,height=500)
 
 y=""
 textBox=Text(master, height=40, width=100)
 textBox.grid(row=1)      
-def new():
+def new():      #to write a new C++ code to convert
     l=Label(master,text="new file")
     l.grid(row=0)
     
 def open2():   #to open an already existing .cpp file
     root=Toplevel(master)
     
-    def o1():
+    def o1():   #to open the open box to write the address of existing C++ file
         k=entry.get()
         l=Label(master,text=k)
         l.grid(row=0)
@@ -42,7 +42,7 @@ def open2():   #to open an already existing .cpp file
     l.grid(row=2)
 
 
-def abc():
+def abc():     #the convertor function it will read the C graphics code character by character and convert it to python code 
         x=""
         lines=0
         words=0
@@ -95,7 +95,7 @@ def abc():
         file.write("abc = [639,470]\nscreen = pygame.display.set_mode(abc)\n\n")
         file.write("WHITE = (255,255,255) \nBLACK = (0,0,0)\n\n")
 
-        def run(str1):
+        def run(str1):      #to find whether the input in graphics function by user contains an interger or not
             regex=re.compile('[~`!@#$%^&*()_+=|\}{:;><,?/abcdefghijklmnopqrstuvwxyz]')
             if(regex.search(str1)==None): 
                 return float(str1)
@@ -104,7 +104,7 @@ def abc():
                 return '*'
                 ctr=1
         
-        def run2(str2):
+        def run2(str2):     #to find whether the input in graphics function by user contains an interger or not
             regex=re.compile('[~`!@#$%^&*()_+=|\}{:;><,?/abcdefghijklmnopqrstuvwxyz.]')
             if(regex.search(str2)==None): 
                 return int(str2)
@@ -434,7 +434,7 @@ def abc():
                   file.write(",")
                   file.write(str(2*f))
                   file.write("],")
-                  file.write(",2)  \n")
+                  file.write("2)  \n")
           
                elif(c!=0 or d!=360):
                   pygame.draw.arc(screen, WHITE, [a-e,b-f,2*e,2*f],(c*pi)/180,(d*pi)/180,2)
