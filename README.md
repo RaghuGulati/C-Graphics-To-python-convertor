@@ -4,7 +4,7 @@ C graphics such as line, circle, drawpoly( for drawing various polygons), ellips
 linux. 
 
 # Pre-requisites
-=> Python version 3
+=> Python version 3 <br>
 => pygame and tkinter packages installed
 
 # Installation
