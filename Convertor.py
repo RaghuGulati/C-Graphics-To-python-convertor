@@ -368,7 +368,7 @@ def abc():     #the convertor function it will read the C graphics code characte
                    c=0
                    d=0
 
-               else:#pygame.draw.rect(screen,WHITE,[a,b,c-a,d-b],2)
+               else:pygame.draw.rect(screen,WHITE,[a,b,c-a,d-b],2)
                
                 file.write("pygame.draw.rect(screen,WHITE,[")
                 file.write(str(a))
