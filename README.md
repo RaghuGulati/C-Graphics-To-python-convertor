@@ -13,7 +13,7 @@ You need to clone the this repository.
 For linux use the command git clone <link of the repository> :
 git clone https://github.com/RaghuGulati/C-Graphics-To-python-convertor
 
-- for linux, then enter in the folder which is downloaded and you will se the file Convertor.py; 
+- for linux, then enter in the folder which is downloaded and you will se the file Convertor.py; <br>
     To execute, use command "python3 Convertor.py"
     
 - for windows, you can execute it on any python IDE such as visual studio, pycharm.
